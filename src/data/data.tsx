@@ -27,6 +27,7 @@ import {
   Hero,
   HomepageMeta,
   PortfolioItem,
+  Project,
   SkillGroup,
   Social,
   TimelineItem,
@@ -49,9 +50,8 @@ export const SectionId = {
   Contact: 'contact',
   Portfolio: 'portfolio',
   Resume: 'resume',
-  Skills: 'skills',
+  Projects: 'projects',
   Stats: 'stats',
-  Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
@@ -66,11 +66,11 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a Münich based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">ParcelLab</strong> helping build a modern, post-purchase and customer experience tool.
+        at <strong className="text-stone-100">ParcelLab</strong> helping build a modern, post-purchase and customer
+        experience tool.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me playing Apex legends,
-        coding cool shit, or exploring our beautiful{' '}
+        In my free time time, you can catch me playing Apex legends, coding cool shit, or exploring our beautiful{' '}
         <strong className="text-stone-100">World</strong>.
       </p>
     </>
@@ -181,6 +181,40 @@ export const skills: SkillGroup[] = [
 ];
 
 /**
+ * Projects section
+ */
+export const projects: Project[] = [
+  {
+    name: 'Piarka',
+    description: 'A project which is dedicated to help solo traveler in strange cities',
+  },
+  {
+    name: 'Sliden & Learn',
+    description: 'A mini game for kids to learn animals in different languages',
+  },
+  {
+    name: '81 Guides',
+    description: 'A project which provides 81 Guides in 81 cities of Turkey',
+  },
+  {
+    name: 'An unusual refrugee',
+    description: 'A Survival game in a foreign planet',
+  },
+  {
+    name: 'Procedural dungeon',
+    description: 'Procedurally generated dungeons with a Souls-like turn based rpg.',
+  },
+  {
+    name: 'dogabudak.com',
+    description: 'Basically this website',
+  },
+  {
+    name: 'piarkasoftware.com',
+    description: 'A startup website',
+  },
+];
+
+/**
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
@@ -235,11 +269,7 @@ export const experience: TimelineItem[] = [
     date: 'July 2022 - Present',
     location: 'ParcelLab',
     title: 'Backend Engineer',
-    content: (
-      <p>
-        Backend engineer for a customer OXM product, developed with Amazon SQS, nodejs and mongoDB.
-      </p>
-    ),
+    content: <p>Backend engineer for a customer OXM product, developed with Amazon SQS, nodejs and mongoDB.</p>,
   },
   {
     date: 'Jan. 2022 - July 2022',
@@ -247,8 +277,8 @@ export const experience: TimelineItem[] = [
     title: 'Backend Engineer',
     content: (
       <p>
-        Backend engineer for an online scheduling and resource management software for small, medium businesses, developed with
-        nodejs and graphql and aws lambda.
+        Backend engineer for an online scheduling and resource management software for small, medium businesses,
+        developed with nodejs and graphql and aws lambda.
       </p>
     ),
   },
@@ -256,12 +286,7 @@ export const experience: TimelineItem[] = [
     date: 'July. 2021 - Dec 2021',
     location: 'Kirinus Health',
     title: 'Fullstack Developer',
-    content: (
-      <p>
-        Fullstack developer for an online therapy platform, developed with
-        mongodb, golang and flutter.
-      </p>
-    ),
+    content: <p>Fullstack developer for an online therapy platform, developed with mongodb, golang and flutter.</p>,
   },
   {
     date: 'Aug. 2018 - July 2021',
@@ -269,8 +294,7 @@ export const experience: TimelineItem[] = [
     title: 'Fullstack Developer',
     content: (
       <p>
-        Fullstack developer for Germany's biggest comparison portal, developed with
-        mongodb and React and typescript.
+        Fullstack developer for Germany's biggest comparison portal, developed with mongodb and React and typescript.
       </p>
     ),
   },
@@ -278,24 +302,14 @@ export const experience: TimelineItem[] = [
     date: 'Jan. 2018 - Aug 2018',
     location: 'ProSieben Sat.1',
     title: 'Backend Developer',
-    content: (
-      <p>
-        Backend engineer for ProSieben online services , developed with
-        mongodb and nodejs and aws lambda.
-      </p>
-    ),
+    content: <p>Backend engineer for ProSieben online services , developed with mongodb and nodejs and aws lambda.</p>,
   },
   {
     date: 'Aug. 2014 - Mar. 2017',
     location: 'Matriks Bilgi Dagitim Hizmetleri',
     title: 'Backend Developer',
-    content: (
-      <p>
-        Backend engineer for Stock market data provider, developed with
-        cassandra and nodejs and rustlang.
-      </p>
-    ),
-  }
+    content: <p>Backend engineer for Stock market data provider, developed with cassandra and nodejs and rustlang.</p>,
+  },
 ];
 
 /**

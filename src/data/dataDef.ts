@@ -51,10 +51,9 @@ export interface AboutItem {
 /**
  * Stat section
  */
-export interface Stat {
-  title: string;
-  value: number;
-  Icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+export interface Project {
+  name: string;
+  description: string;
 }
 
 /**
