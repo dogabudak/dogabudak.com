@@ -77,7 +77,6 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      // TODO Put your resume
       href: '/assets/resume.pdf',
       text: 'Resume',
       primary: true,
