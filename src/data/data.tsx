@@ -211,6 +211,10 @@ export const projects: Project[] = [
     name: 'piarkasoftware.com',
     description: 'A startup website',
   },
+  {
+    name: 'yesildoga',
+    description: 'A project focuses on earth, our earth',
+  },
 ];
 
 /**
